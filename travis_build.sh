@@ -7,7 +7,7 @@ function moan(){
 
 cd "$( dirname "$0" )"
 
-./jcompilo.sh
+sbt update package
 
 repo=https://api.bintray.com/content/raymanoz/repo
 version_url=${repo}/com/unsprung/careless/careless/${BUILD_NUMBER}
