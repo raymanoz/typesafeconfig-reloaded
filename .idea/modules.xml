@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/typesafeconfig-reloaded.iml" filepath="$PROJECT_DIR$/.idea/modules/typesafeconfig-reloaded.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/typesafeconfig-reloaded-build.iml" filepath="$PROJECT_DIR$/.idea/modules/typesafeconfig-reloaded-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/typesafeconfig-reloaded.iml" filepath="$PROJECT_DIR$/typesafeconfig-reloaded.iml" />
+      <module fileurl="file://$PROJECT_DIR$/typesafeconfig-reloaded-build/typesafeconfig-reloaded-build.iml" filepath="$PROJECT_DIR$/typesafeconfig-reloaded-build/typesafeconfig-reloaded-build.iml" />
     </modules>
   </component>
 </project>

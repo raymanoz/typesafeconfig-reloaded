@@ -8,7 +8,7 @@ import com.typesafe.config.ConfigException.UnresolvedSubstitution
 import org.scalatest.FunSuite
 
 class FallbackConfigurationLoaderTest extends FunSuite {
-  private def writeConfig(configFilename: String, content: String) = write(bytes(content), new File("target/scala-2.11/classes/" + configFilename))
+  private def writeConfig(configFilename: String, content: String) = write(bytes(content), new File("target/scala-2.11/test-classes/" + configFilename))
 
   test("can get values from a config with fallback specified") {
     writeConfig("ref.conf", "var1=sheep")
