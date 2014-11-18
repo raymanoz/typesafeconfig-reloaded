@@ -1,0 +1,19 @@
+language: java
+jdk:
+- oraclejdk7
+script: ./travis_build.sh
+env:
+  global:
+  - BUILD_NUMBER=$TRAVIS_BUILD_NUMBER
+  - secure: CqWvT/jl531hQ4tZKTX976rG/lJzQnK2W6pgjAL3Ew0+73vxY/kAm8BaD4Wy4zSGDgdqdnutf/NNMviTeI4rz7C6EyKrvLDSlF+/cJoY8+ilyR/3dSZAyIhzQezqn+VgwQVcT/4J2F58nPkFAb0jjW1JjaIRJ5nrqb8+WSbb1pw=
+  - secure: H3dcTwChj6/lgNcIw+BNzUdY5Gk+AmVMzSSbd5Q1PC30uySQl72DygZwm1SLZU0Vgj8D+rQu30RBBZPjxwiUvcIQ1YzEu0DTNFbuqKsIbevHJCrp5J9BOzgHmUjUwPW9nv3bQPn/wuOF5wbO3o6ot/4aGKP8X1B6m6eoDYyVGW0=
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  bucket: "repo.raymanoz.com"
+  region: eu-west-1
+  endpoint: repo.raymanoz.com.s3-website-eu-west-1.amazonaws.com
+  skip_cleanup: true
+  local-dir: target/s3
+  upload-dir: com/unsprung/reloaded/reloaded/$BUILD_NUMBER
