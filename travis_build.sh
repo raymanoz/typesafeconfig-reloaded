@@ -7,11 +7,7 @@ function moan(){
 
 cd "$( dirname "$0" )"
 
-sbt update package
-
-repo=https://api.bintray.com/content/raymanoz/repo
-version_url=${repo}/com/unsprung/careless/careless/${BUILD_NUMBER}
-artifact="reloaded-"${BUILD_NUMBER}
+sbt -Dversion=${BUILD_NUMBER} clean update package
 
 cd target
 
