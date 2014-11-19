@@ -10,7 +10,7 @@ scalaBinaryVersion := "2.11"
 
 version := {
   import System.getProperty
-  Option(getProperty("version")).getOrElse("dev.build")
+  Option(getProperty("BUILD_NUMBER")).getOrElse("dev.build")
 }
 
 publishTo := Some(Resolver.file("file", new File("target")))
