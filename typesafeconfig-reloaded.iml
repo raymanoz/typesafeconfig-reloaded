@@ -12,16 +12,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="scala-sdk-2.11.4" level="application" />
-    <orderEntry type="module-library" scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/lib/build" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/lib/build" recursive="false" />
-      </library>
-    </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -32,6 +22,15 @@
         <jarDirectory url="file://$MODULE_DIR$/lib/compile" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="scala-sdk-2.11.4" level="application" />
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib/test" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib/test" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>

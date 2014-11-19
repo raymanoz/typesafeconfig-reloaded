@@ -1,4 +1,4 @@
-package com.unsprung.reloaded
+package com.raymanoz.reloaded
 
 import com.typesafe.config.Config
 import com.typesafe.config.ConfigFactory.{defaultOverrides, parseResourcesAnySyntax}
