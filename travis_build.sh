@@ -14,11 +14,9 @@ cd target
 
 function prepare_for_publish() {
     mkdir s3
-    cp com/raymanoz/reloaded/typesafeconfig-reloaded_2.11/${version}/*${version}.jar s3
-    cp com/raymanoz/reloaded/typesafeconfig-reloaded_2.11/${version}/*${version}-sources.jar s3
-    cp com/raymanoz/reloaded/typesafeconfig-reloaded_2.11/${version}/*${version}.pom s3
+    cp com/raymanoz/reloaded/reloaded_2.11/${version}/*${version}.jar s3
+    cp com/raymanoz/reloaded/reloaded_2.11/${version}/*${version}-sources.jar s3
+    cp com/raymanoz/reloaded/reloaded_2.11/${version}/*${version}.pom s3
 }
 
-if [[ "${TRAVIS_BRANCH}" == 'master' && "${TRAVIS_PULL_REQUEST}" == 'false' ]]; then
-    prepare_for_publish || moan 'Failed to prepare_for_publish'
-fi
+prepare_for_publish || moan 'Failed to prepare_for_publish'

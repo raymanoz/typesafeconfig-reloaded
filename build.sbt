@@ -2,7 +2,7 @@ shavenMavenTask
 
 organization := "com.raymanoz.reloaded"
 
-name := "typesafeconfig-reloaded"
+name := "reloaded"
 
 scalaVersion := "2.11.4"
 
