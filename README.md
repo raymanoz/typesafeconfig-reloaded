@@ -13,7 +13,7 @@ Add the following lines to your build.sbt
 
     resolvers += "Raymond Barlow's repo" at "http://repo.raymanoz.com/"
 
-    libraryDependencies += "com.raymanoz.reloaded" %% "reloaded" % "6"
+    libraryDependencies += "com.raymanoz.reloaded" %% "reloaded" % "12"
 
 Start hacking
 

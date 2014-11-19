@@ -1,2 +1,1 @@
-mvn://repo.raymanoz.com/com.raymanoz.careless:careless:jar:30
 mvn:com.typesafe:config:jar:1.2.1
