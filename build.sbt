@@ -1,6 +1,6 @@
 shavenMavenTask
 
-organization := "com.raymanoz"
+organization := "com.raymanoz.reloaded"
 
 name := "typesafeconfig-reloaded"
 
@@ -8,10 +8,7 @@ scalaVersion := "2.11.4"
 
 scalaBinaryVersion := "2.11"
 
-version := {
-  import System.getProperty
-  Option(getProperty("version")).getOrElse("dev.build")
-}
+version := Option(System.getProperty("version")).getOrElse("dev.build")
 
 publishTo := Some(Resolver.file("file", new File("target")))
 
