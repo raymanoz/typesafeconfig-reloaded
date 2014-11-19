@@ -7,7 +7,7 @@ function moan(){
 
 cd "$( dirname "$0" )"
 
-version=${BUILD_NUMNER:-'dev.build'}
+version=${BUILD_NUMBER:-'dev.build'}
 sbt -Dversion=${version} clean update test publish
 
 cd target
