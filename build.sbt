@@ -17,11 +17,6 @@ publishTo := Some(Resolver.file("file", new File("target")))
 
 pomExtra := <dependencies>
   <dependency>
-    <groupId>com.unsprung.careless</groupId>
-    <artifactId>careless</artifactId>
-    <version>27</version>
-  </dependency>
-  <dependency>
     <groupId>com.typesafe</groupId>
     <artifactId>config</artifactId>
     <version>1.2.1</version>

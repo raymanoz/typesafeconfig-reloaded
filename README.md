@@ -1,4 +1,4 @@
-typesafeconfig-reloaded [![Build Status](https://travis-ci.org/raymanoz/careless.svg?branch=master)](https://travis-ci.org/raymanoz/careless)
+typesafeconfig-reloaded [![Build Status](https://travis-ci.org/raymanoz/typesafeconfig-reloaded.svg?branch=master)](https://travis-ci.org/raymanoz/typesafeconfig-reloaded)
 =======================
 
 A [typesafe config](https://github.com/typesafehub/config) pimp with a easy to use n-deep fallback strategy
@@ -13,7 +13,7 @@ Add the following lines to your build.sbt
 
     resolvers += "Raymond Barlow's repo" at "http://repo.raymanoz.com/"
 
-    libraryDependencies += "com.raymanoz.reloaded" %% "reloaded" % "12"
+    libraryDependencies += "com.raymanoz.reloaded" %% "reloaded" % "14"
 
 Start hacking
 
