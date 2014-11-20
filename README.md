@@ -13,7 +13,7 @@ Add the following lines to your build.sbt
 
     resolvers += "Raymond Barlow's repo" at "http://repo.raymanoz.com/"
 
-    libraryDependencies += "com.raymanoz.reloaded" %% "reloaded" % "16"
+    libraryDependencies += "com.raymanoz.reloaded" %% "reloaded" % "18"
 
 Start hacking
 
@@ -49,3 +49,6 @@ For more examples see
 
 * [FallbackConfigurationLoaderTest.scala](https://github.com/raymanoz/typesafeconfig-reloaded/blob/master/src/test/scala/com/raymanoz/reloaded/FallbackConfigurationLoaderTest.scala)
 
+Code license
+------------
+Apache License 2.0
