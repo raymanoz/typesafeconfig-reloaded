@@ -5,7 +5,7 @@ import com.typesafe.config.Config
 import com.typesafe.config.ConfigException
 import scala.util.Try
 
-abstract class Configured[T](logger: Logger = new DefaultLogger) {
+abstract class Configured[T](logger: Logger = NoopLogger) {
   def environment: String
 
   logger.info(s"Loading config from $environment.conf falling back to reference.conf")
