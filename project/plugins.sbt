@@ -1,3 +1,3 @@
-resolvers += "Bodar Repo" at "http://repo.bodar.com/"
+resolvers += "raymanoz repo" at "http://repo.raymanoz.com/"
 
-addSbtPlugin("com.googlecode.shavenmaven-sbtplugin" %% "shavenmaven-sbtplugin" % "20")
+addSbtPlugin("com.raymanoz.shavenmaven-sbtplugin" %% "shavenmaven-sbtplugin" % "2")
