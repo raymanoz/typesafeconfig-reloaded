@@ -1,5 +1,7 @@
 package com.raymanoz.reloaded
 
+import java.io.File
+
 import com.raymanoz.reloaded.Read._
 import com.typesafe.config.Config
 import com.typesafe.config.ConfigException
@@ -34,9 +36,12 @@ abstract class Configured[T](logger: Logger = NoopLogger) {
   def optional[A: Read](property: String): Try[Option[A]] = get(property).flatMap(Read[A].read).map(Some(_)).recover { case e: ConfigException.Missing => None}
 
   def required[A: Read](property: String): Try[A] = {
-    get(property) flatMap {
-      case value if value.isEmpty => throw new RuntimeException(s"Required property '$property' is empty")
-      case value => Read[A].read(value)
+    val triedString: Try[String] = get(property)
+    triedString flatMap {
+      case value if value.isEmpty =>
+        throw new RuntimeException(s"Required property '$property' is empty")
+      case value =>
+        Read[A].read(value)
     }
   }
 
@@ -65,6 +70,13 @@ object Read {
 
   implicit val intReader = new Read[Int] {
     override def read(in: String): Try[Int] = toTried(in.toInt)
+  }
+
+  implicit val fileReader = new Read[File] {
+    override def read(in: String): Try[File] = {
+      println("AAaaaaaaHHH!!!")
+      toTried(new File(in))
+    }
   }
 
   implicit class StringRead(in: String) {
