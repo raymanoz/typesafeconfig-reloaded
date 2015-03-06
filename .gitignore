@@ -1,5 +1,8 @@
 workspace.xml
 profiles_settings.xml
+scala_compiler.xml
+sbt.xml
+SBT*.xml
 lib
 project/project
 target

@@ -7,8 +7,16 @@ import com.googlecode.totallylazy.Strings.bytes
 import com.typesafe.config.ConfigException.UnresolvedSubstitution
 import org.scalatest.FunSuite
 
+import scala.util.Random
+
 class FallbackConfigurationLoaderTest extends FunSuite {
   private def writeConfig(configFilename: String, content: String) = write(bytes(content), new File("target/scala-2.11/test-classes/" + configFilename))
+
+  test("blows up if config file does not exist") {
+    intercept[RuntimeException] {
+      FallbackConfigurationLoader.load("doesNotExist")
+    }
+  }
 
   test("can get values from a config with fallback specified") {
     writeConfig("ref.conf", "var1=sheep")
