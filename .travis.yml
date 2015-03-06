@@ -17,6 +17,3 @@ deploy:
   skip_cleanup: true
   local-dir: target/s3
   upload-dir: com/raymanoz/reloaded/reloaded_2.11/$BUILD_NUMBER
-notifications:
-  slack:
-    secure: Jbs/sjJtMEKm6cg75s97mLJRM2ePm1cGVzqEAK+CWG4cdUsj0+BDwlUP+PX1HpTDH6VFOoNwECNJy3ZHU+7ljj/fTc3uOTTDaISSPp0LeUnTNDeZHijtZL8e9VWWJ+TR/2iQLzsmMW4AqR2qqcao0LhPPJCLajENkpLKrtva9EM=
