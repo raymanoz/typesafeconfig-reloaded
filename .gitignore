@@ -6,3 +6,4 @@ SBT*.xml
 lib
 project/project
 target
+.idea
