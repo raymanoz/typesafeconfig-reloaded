@@ -1,6 +1,6 @@
 language: java
 jdk:
-- oraclejdk7
+- oraclejdk8
 script: ./travis_build.sh
 env:
   global:
@@ -16,4 +16,4 @@ deploy:
   endpoint: repo.raymanoz.com.s3-website-eu-west-1.amazonaws.com
   skip_cleanup: true
   local-dir: target/s3
-  upload-dir: com/raymanoz/reloaded/reloaded_2.11/$BUILD_NUMBER
+  upload-dir: com/raymanoz/reloaded/reloaded_2.12/$BUILD_NUMBER

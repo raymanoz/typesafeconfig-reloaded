@@ -1,3 +1,3 @@
-mvn:org.scalatest:scalatest_2.11:jar:2.2.2
-mvn://repo.bodar.com/com.googlecode.totallylazy:totallylazy:jar:1.21
-mvn:org.scala-lang.modules:scala-xml_2.11:jar:1.0.2
+mvn:org.scalatest:scalatest_2.12:jar:3.0.0
+mvn:org.scalactic:scalactic_2.12:jar:3.0.0
+mvn://repo.bodar.com/com.googlecode.totallylazy:totallylazy:jar:1.85

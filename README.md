@@ -5,7 +5,7 @@ A [typesafe config](https://github.com/typesafehub/config) pimp with a easy to u
 
 Requirements
 ------------
-* [scala](http://www.scala-lang.org) 2.11.x
+* [scala](http://www.scala-lang.org) 2.12.x
 
 Usage
 -----

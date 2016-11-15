@@ -10,7 +10,7 @@ import org.scalatest.FunSuite
 import scala.util.Random
 
 class FallbackConfigurationLoaderTest extends FunSuite {
-  private def writeConfig(configFilename: String, content: String) = write(bytes(content), new File("target/scala-2.11/test-classes/" + configFilename))
+  private def writeConfig(configFilename: String, content: String) = write(bytes(content), new File("target/scala-2.12/test-classes/" + configFilename))
 
   test("blows up if config file does not exist") {
     intercept[RuntimeException] {
